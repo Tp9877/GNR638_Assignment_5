@@ -105,9 +105,9 @@ Total loss: L_recon + KL_div
 
 ## Training
 1. Load **MNIST dataset** (Note: the data is not normalized).
-2. Train the VAE using **Adam optimizer** with `lr=0.001`.
+2. Train the VAE using **Adam optimizer** with `lr=0.001`.(We varied lr from 1e-4 to 1e-2 and we got the best result for lr=1e-3)
 3. Optimize the **total loss** for better reconstruction and meaningful latent spaces.
-4. Monitor **loss convergence** over multiple epochs.
+4. Monitor **loss convergence** over 100 epochs.
 
 ---
 
