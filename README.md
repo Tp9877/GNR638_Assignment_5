@@ -101,7 +101,7 @@ The loss function consists of:
    
 
 Total loss:
-\[
+$$\[
 \mathcal{L} = \mathcal{L}_{\text{recon}} + \mathcal{KL}_{\text{div}}
-\]
+\]$$
 
