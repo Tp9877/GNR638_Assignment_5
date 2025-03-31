@@ -17,7 +17,7 @@ transform = transforms.Compose([
 train_dataset = datasets.MNIST(root="./data", train=True, transform=transform, download=True)
 train_loader = DataLoader(train_dataset, batch_size=64, shuffle=True, num_workers=2, pin_memory=True)
 
-indices_7 = [i for i, (img, label) in enumerate(train_dataset) if label == 7]
+indices_7 = [i for i, (img, label) in enumerate(train_dataset) if label == 7]  # Change label == 7 to whatever class of MNIST dataset (i.e 0-9) to train the H_VAE on.
 
 # Create a subset dataset with only class 7
 train_dataset_7 = Subset(train_dataset, indices_7)
