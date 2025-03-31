@@ -55,7 +55,7 @@
                      └──────────────────────────┘
 
 
-  Above is representation of heirarichal vae that is implemented by us in the code.
+  Above is representation of  Hierarchical Variational Autoencoder that is implemented by us in the code.
 
 
 
@@ -114,4 +114,7 @@ Total loss: L_recon + KL_div
 ## Generating New Images
 - Sample **random latent vectors (`z1`, `z2`)** from a normal distribution.
 - Pass them through the **decoder** to generate **new MNIST-style digits**.
+
+## Results
+
 
