@@ -65,7 +65,7 @@ This project implements a **Hierarchical Variational Autoencoder (H-VAE)** on th
 ## Architecture
 The H-VAE consists of:
 
-1. **Encoder**: Extracts features and maps them to a two-level latent space (`z1`, `z2`).
+1. **Encoder**: Extracts features and maps them to a two-level latent space (`z1`, `z2`). Note (`z1`, `z2`) fixed to ('32','16').
 2. **Reparameterization Trick**: Ensures sampling is differentiable for backpropagation.
 3. **Decoder**: Reconstructs the image from latent variables (`z1`, `z2`).
 4. **Loss Function**: Combines **Reconstruction Loss** and **KL Divergence Loss** to regularize latent space.
@@ -103,4 +103,15 @@ The loss function consists of:
 Total loss: L_recon + KL_div
 
 
+## Training
+1. Load **MNIST dataset** (Note: the data is not normalized).
+2. Train the VAE using **Adam optimizer** with `lr=0.001`.
+3. Optimize the **total loss** for better reconstruction and meaningful latent spaces.
+4. Monitor **loss convergence** over multiple epochs.
+
+---
+
+## Generating New Images
+- Sample **random latent vectors (`z1`, `z2`)** from a normal distribution.
+- Pass them through the **decoder** to generate **new MNIST-style digits**.
 
