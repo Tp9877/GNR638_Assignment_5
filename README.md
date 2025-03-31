@@ -100,7 +100,7 @@ The loss function consists of:
 2. **KL Divergence Loss**: Regularizes the latent space to approximate a normal distribution.
    
 
-Total loss:
+Total loss:  
 $$
 \mathcal{L} = \mathcal{L}_{\text{recon}} + \mathcal{KL}_{\text{div}}
 $$
