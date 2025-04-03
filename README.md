@@ -130,7 +130,7 @@ When trained only on images belonging to the **digit "7"**, the VAE focuses on g
 
 ### **3) VAE Trained seprately on each Class of MNIST Dataset**
 
-![Generated digits of each class](https://github.com/user-attachments/assets/c76dfdc8-c810-483e-8757-a1e0c7c81a7b)
+<img src="https://github.com/user-attachments/assets/c76dfdc8-c810-483e-8757-a1e0c7c81a7b" alt="Generated digits of each class" width="300" height="300">
 
 ## Google Colab
 
