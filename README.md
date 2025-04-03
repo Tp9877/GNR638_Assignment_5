@@ -65,7 +65,7 @@ This project implements a **Hierarchical Variational Autoencoder (H-VAE)** on th
 ## Architecture
 The H-VAE consists of:
 
-1. **Encoder**: Extracts features and maps them to a two-level latent space (`z1`, `z2`). Note (`z1`, `z2`) fixed to ('32','16').
+1. **Encoder**: Extracts features and maps them to a two-level latent space (`z1`, `z2`). Note (`z1`, `z2`) fixed to ('32','16') as for ('400','20') Images were not being generated well.
 2. **Reparameterization Trick**: Ensures sampling is differentiable for backpropagation.
 3. **Decoder**: Reconstructs the image from latent variables (`z1`, `z2`).
 4. **Loss Function**: Combines **Reconstruction Loss** and **KL Divergence Loss** to regularize latent space.
