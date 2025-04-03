@@ -121,7 +121,8 @@ Total loss: L_recon + KL_div
 ### **1) VAE Trained on Entire MNIST Dataset**
 After training on the entire MNIST dataset, the model is able to generate diverse handwritten digits, capturing the full distribution of the data. The results show the VAE's ability to model various digits and their characteristics.
 
-![Generated Digits on Full MNIST](https://github.com/user-attachments/assets/65a01bd2-ef81-4229-acfb-517465a04426)
+
+![Generated Digits on Full MNIST](https://github.com/user-attachments/assets/8734f297-03c0-44f1-85e9-e172944413b1)
 
 
 
